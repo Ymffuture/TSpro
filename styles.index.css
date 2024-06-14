@@ -118,7 +118,7 @@ body, html {
   }
   .navbar-nav{
     gap: 40px;
-    position: fixed;
+    /* position: fixed; */
     background: rgba(212, 70, 70, 0.795);
     padding: 20px;
     border-radius: 16px;
@@ -129,30 +129,27 @@ body, html {
     color: brown;
   }
   .navbar-dm {
-    background-color: transparent !important;
+    background-color: rgba(255, 0, 0, 0) !important;
     padding: 25px;
   }
-  
+
   .navbar-dm .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5); /* Adjust transparency as needed */
+    border-color: rgba(0, 0, 0, 0.998); /* Adjust transparency as needed */
+    background: rgb(118, 115, 115);
   }
   
   .navbar-dm .navbar-nav .nav-link {
-    color: rgb(15, 15, 15) !important;
+    color: rgb(15, 15, 15) ;
+    
   }
   .nav-link:hover{
     color: blue;
     background-color: aqua;
     border-radius: 18px;
-    -webkit-border-radius: 18px;
-    -moz-border-radius: 18px;
-    -ms-border-radius: 18px;
-    -o-border-radius: 18px;
+    -webkit-border-radius: 8px;
+   
     transition: .2s ease-in;
-    -webkit-transition: .2s ease-in;
-    -moz-transition: .2s ease-in;
-    -ms-transition: .2s ease-in;
-    -o-transition: .2s ease-in;
+  
 }
   .navbar-dm .btn-primary {
     background-color: rgba(253, 253, 253, 0.068); 
@@ -170,7 +167,7 @@ body, html {
   .navbar-dm .btn-primary:hover {
     background-color: rgb(3, 3, 3); 
     border-color: rgb(0, 238, 167); 
-    color: rgb(255, 254, 254); 
+    color: rgb(27, 26, 26); 
   }
 
 .btn-outline-secondary2{
@@ -264,11 +261,11 @@ body, html {
   }
 
 
-.ticket-section{
+/* .ticket-section{
 
   padding: 150px;
   height: 50vh;
-}
+} */
 
 footer{
   background: rgb(66, 66, 66);
@@ -323,9 +320,6 @@ footer{
   .ticket-actions {
     margin-top: 10px;
   }
-
-
-
 
   .ticket-section {
     padding: 2rem 3rem;
