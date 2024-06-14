@@ -6,6 +6,9 @@
   <title>Payment Successful</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="styles.index.css" rel="stylesheet">
+  <!-- Add this line in the <head> section of your HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,7 +17,7 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background-color: #f8f9fa;
+      background-color: #ffffff00;
     }
     .success-container {
       text-align: center;
@@ -65,7 +68,7 @@
   
   <style>
     .container2 {
-      --uib-size: 80px;
+      --uib-size: 150px;
       --uib-color: black;
       --uib-speed: 1.5s;
       --uib-dot-size: calc(var(--uib-size) * 0.1);
@@ -122,9 +125,10 @@
     }
   
     .dot:nth-child(1) {
-      --uib-bottom: 24%;
+      --uib-bottom: 28%;
       --uib-right: -35%;
       animation-delay: calc(var(--uib-speed) * var(--uib-d1));
+      --uib-color: rgb(240, 6, 6);
     }
     .dot:nth-child(2) {
       --uib-bottom: 16%;
@@ -135,6 +139,7 @@
       --uib-bottom: 8%;
       --uib-right: 23%;
       animation-delay: calc(var(--uib-speed) * var(--uib-d3));
+      --uib-color: rgb(240, 6, 6);
     }
     .dot:nth-child(4) {
       --uib-bottom: -1%;
@@ -145,6 +150,7 @@
       --uib-bottom: 38%;
       --uib-right: -17.5%;
       animation-delay: calc(var(--uib-speed) * var(--uib-d2));
+      --uib-color: rgb(3, 97, 114);
     }
     .dot:nth-child(6) {
       --uib-bottom: 30%;
@@ -160,6 +166,7 @@
       --uib-bottom: 14%;
       --uib-right: 67%;
       animation-delay: calc(var(--uib-speed) * var(--uib-d5));
+      --uib-color: rgb(240, 6, 6);
     }
     .dot:nth-child(9) {
       --uib-bottom: 53%;
@@ -170,6 +177,7 @@
       --uib-bottom: 44.5%;
       --uib-right: 27%;
       animation-delay: calc(var(--uib-speed) * var(--uib-d4));
+      --uib-color: rgb(245, 153, 4);
     }
     .dot:nth-child(11) {
       --uib-bottom: 36%;
@@ -180,26 +188,31 @@
       --uib-bottom: 28.7%;
       --uib-right: 84.3%;
       animation-delay: calc(var(--uib-speed) * var(--uib-d6));
+      --uib-color: rgb(240, 6, 6);
     }
     .dot:nth-child(13) {
       --uib-bottom: 66.8%;
       --uib-right: 15%;
       animation-delay: calc(var(--uib-speed) * var(--uib-d4));
+      --uib-color: rgb(240, 6, 6);
     }
     .dot:nth-child(14) {
       --uib-bottom: 58.8%;
       --uib-right: 43%;
       animation-delay: calc(var(--uib-speed) * var(--uib-d5));
+      --uib-color: rgb(115, 240, 6);
     }
     .dot:nth-child(15) {
       --uib-bottom: 50%;
       --uib-right: 72%;
       animation-delay: calc(var(--uib-speed) * var(--uib-d6));
+      --uib-color: rgb(240, 6, 6);
     }
     .dot:nth-child(16) {
       --uib-bottom: 42%;
       --uib-right: 100%;
       animation-delay: calc(var(--uib-speed) * var(--uib-d7));
+      --uib-color: rgb(6, 29, 240);
     }
   
     .dot:nth-child(3) {
@@ -239,20 +252,23 @@
   
   
 <body>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="success-container">
-          <h1 class="display-4">Payment Successful!</h1>
-          <p class="lead">Thank you for your purchase.</p>
-          <a href="index.html" class="btn btn-primary btn-lg">Go to Homepage</a>
-<br><hr>
-          <p> <b style="color: red;">ID: 8722930TDD</b></p>
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="success-container">
+              <div class="text-center">
+                <i class="fas fa-check-circle fa-5x text-success"></i>
+              </div>
+              <h1 class="display-4 mt-3">Payment Successful!</h1>
+              <p class="lead">Thank you for your purchase.</p>
+              <a href="index.html" class="btn btn-primary btn-lg">Go to Homepage</a>
+              <br><hr>
+              <p><b style="color: red;">ID: 8722930TDD</b></p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-   
-  </div>
+      
   <script>
     document.addEventListener('DOMContentLoaded', function() {
   // Set the time for the loading animation to be visible (e.g., 3 seconds)
@@ -261,12 +277,15 @@
   // Function to remove the loading animation
   function removeLoadingAnimation() {
     const loadingContainer = document.querySelector('.container2');
+    
     if (loadingContainer) {
       loadingContainer.style.display = 'none';
+     
     }
     const successContainer = document.querySelector('.success-container');
     if (successContainer) {
       successContainer.style.display = 'block';
+     
     }
   }
 
@@ -274,6 +293,7 @@
   const successContainer = document.querySelector('.success-container');
   if (successContainer) {
     successContainer.style.display = 'none';
+    
   }
 
   // Set a timeout to remove the loading animation after the specified duration
