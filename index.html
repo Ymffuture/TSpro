@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>profile | TSpro</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="styles/styles.index.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="images/Logo Maker 2024_05_23_10_04_13.png" alt="Logo" width="80" height="80">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="searchButton"><i class="material-icons">search</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="material-icons">favorite</i> Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="material-icons">event_seat</i> My Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="material-icons">calendar_today</i> Calendar</a>
+        </li>
+        <li class="nav-item">
+          <a href="#3" class="btn btn-primary">Buy Tickets</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="full-screen-search" id="fullScreenSearch">
+    <input type="text" class="form-control" placeholder="Search...">
+  </div>
+
+  <div class="hero-section">
+  
+    <div class="bg-dark text-secondary px-4 py-5 text-center profile">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">Welcome back <span id="username"></span>!</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4">
+
+         <ul style="list-style: none;">
+          <li><img class="pfp" src="images/360_F_.jpg" ><a class="edit2" href="##">Edit</a></li>
+          <li>+27548962548 <a class="edit" href="##">Edit</a></li>
+          <li>futuregomotso@gmail.com <a class="edit" href="##">Edit</a></li>
+         </ul>
+          
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="home.html" type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+      
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <div class="position-relative">
+          <img src="images/HD-wallpaper-deadpool-3-deadpool-3-deadpool-superheroes-2024-movies-movies-artist-artwork-digital-art.jpg" class="d-block mx-lg-auto img-fluid rounded-start" alt="Event Image" width="800" height="600" loading="lazy">
+          <a href="#" class="btn-floating"><i class="material-icons">play_circle</i></a>
+          
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+          Upcoming movie (Dead pool 3)
+        </h1>
+        <p class="lead">
+          Ryan Reynolds as Wade Wilson / Deadpool: A wisecracking mutant mercenary with accelerated healing, but severe scarring over his body after undergoing an experimental cancer treatment. The writers described Deadpool as "fun to hang out with... in short doses
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"  data-toggle="modal" data-target="#videoModal">
+          Watch
+            <i class="material-icons align-middle">arrow_forward</i>
+          </button>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal .....  -->
+  <script>
+    $('#videoModal').on('shown.bs.modal', function () {
+        $('#videoFrame').attr('src', 'https://youtu.be/uJMCNJP2ipI');
+    });
+
+    $('#videoModal').on('hidden.bs.modal', function () {
+        $('#videoFrame').attr('src', '');
+    });
+</script>
+
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel">Dead pool 3</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" id="videoFrame" src="https://www.youtube.com/embed/uJMCNJP2ipI" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <section class="ticket-section">
+    <div class="container">
+      <h2 class="section-title">Purchase Tickets</h2>
+      <div id="ticketCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="ticket1">
+            <div class="ticket">
+              <img src="images/images.jpeg" alt="Ticket 1" class="ticket-image">
+              <div class="ticket-details">
+                <h3 class="ticket-title">Concert Ticket</h3>
+                <p class="ticket-description">Enjoy a live concert experience with your favorite artists.</p>
+                <div class="ticket-actions">
+                  <button class="btn btn-primary btn-sm me-2 buy-ticket" data-event="Summer Music Festival" data-category="Concert" data-price="50">Buy Ticket</button>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" id="ticket2">
+            <div class="ticket" id="3">
+              <img src="images/pexels-pixabay-33129.jpg" alt="Ticket 2" class="ticket-image">
+              <div class="ticket-details">
+                <h3 class="ticket-title">Movie Premiere Ticket</h3>
+                <p class="ticket-description">Be among the first to watch the latest blockbuster movie.</p>
+                <div class="ticket-actions">
+                  <button class="btn btn-primary btn-sm me-2 buy-ticket" data-event="Summer Music Festival" data-category="Movie Premiere" data-price="80">Buy Ticket</button>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" id="ticket3">
+            <div class="ticket">
+              <img src="images/pexels-henri-mathieu-8349431.jpg" alt="Ticket 3" class="ticket-image">
+              <div class="ticket-details">
+                <h3 class="ticket-title">Sports Event Ticket</h3>
+                <p class="ticket-description">Cheer for your favorite team in an exciting sports event.</p>
+                <div class="ticket-actions">
+                  <button class="btn btn-primary btn-sm me-2 buy-ticket" data-event="Summer Music Festival" data-category="Sports Event" data-price="60">Buy Ticket</button>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" id="ticket4">
+            <div class="ticket">
+              <img src="images/pexels-jaralol-17527817.jpg" alt="Ticket 4" class="ticket-image">
+              <div class="ticket-details">
+                <h3 class="ticket-title">Theater Show Ticket</h3>
+                <p class="ticket-description">Experience drama, comedy, and entertainment on stage.</p>
+                <div class="ticket-actions">
+                  <button class="btn btn-primary btn-sm me-2 buy-ticket" data-event="Summer Music Festival" data-category="Theater Show" data-price="70">Buy Ticket</button>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" id="ticket5">
+            <div class="ticket">
+              <img src="images/pexels-henri-mathieu-8349431.jpg" alt="Ticket 5" class="ticket-image">
+              <div class="ticket-details">
+                <h3 class="ticket-title">Festival Pass</h3>
+                <p class="ticket-description">Enjoy multiple days of music, food, and fun at the annual festival.</p>
+                <div class="ticket-actions">
+                  <button class="btn btn-primary btn-sm me-2 buy-ticket" data-event="Summer Music Festival" data-category="Festival Pass" data-price="150">Buy Ticket</button>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#ticketCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#ticketCarousel" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <p id="fullbuy"></p>
+  </section>
+
+  <footer class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h6>IMPORTANT LINKS</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav p-0 text-body">Favorites</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav p-0 text-body">My Tickets</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav p-0 text-body">Calendar</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+       
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2024 TSpro, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body" href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="ms-3"><a class="link-body" href="#"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="link-body" href="#"><i class="bi bi-facebook"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="module" defer src="js/script.main.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

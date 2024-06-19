@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Synergy Pro</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+  <link href="styles.index.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="styles/styles.index.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<!-- ==================================  -->
+
+<div class="container2">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+<style>
+  .container2 {
+    --uib-size: 150px;
+    --uib-color: black;
+    --uib-speed: 1.5s;
+    --uib-dot-size: calc(var(--uib-size) * 0.1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(var(--uib-size) * 0.64);
+    width: calc(var(--uib-size) * 0.64);
+    left:50%
+  }
+
+  @keyframes jump {
+    0%,
+    100% {
+      transform: translateY(120%);
+    }
+
+    50% {
+      transform: translateY(-120%);
+    }
+  }
+
+  .dot {
+    --uib-d1: -0.48;
+    --uib-d2: -0.4;
+    --uib-d3: -0.32;
+    --uib-d4: -0.24;
+    --uib-d5: -0.16;
+    --uib-d6: -0.08;
+    --uib-d7: -0;
+    position: absolute;
+    bottom: calc(var(--uib-bottom) + var(--uib-dot-size) / 2);
+    right: calc(var(--uib-right) + var(--uib-dot-size) / 2);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: var(--uib-dot-size);
+    width: var(--uib-dot-size);
+    animation: jump var(--uib-speed) ease-in-out infinite;
+    opacity: var(--uib-scale);
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+
+  .dot::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: var(--uib-color);
+    border-radius: 50%;
+    transform: scale(var(--uib-scale));
+    transition: background-color 0.3s ease;
+  }
+
+  .dot:nth-child(1) {
+    --uib-bottom: 28%;
+    --uib-right: -35%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d1));
+    --uib-color: rgb(240, 6, 6);
+  }
+  .dot:nth-child(2) {
+    --uib-bottom: 16%;
+    --uib-right: -6%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d2));
+  }
+  .dot:nth-child(3) {
+    --uib-bottom: 8%;
+    --uib-right: 23%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d3));
+    --uib-color: rgb(240, 6, 6);
+  }
+  .dot:nth-child(4) {
+    --uib-bottom: -1%;
+    --uib-right: 51%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d4));
+  }
+  .dot:nth-child(5) {
+    --uib-bottom: 38%;
+    --uib-right: -17.5%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d2));
+    --uib-color: rgb(3, 97, 114);
+  }
+  .dot:nth-child(6) {
+    --uib-bottom: 30%;
+    --uib-right: 10%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d3));
+  }
+  .dot:nth-child(7) {
+    --uib-bottom: 22%;
+    --uib-right: 39%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d4));
+  }
+  .dot:nth-child(8) {
+    --uib-bottom: 14%;
+    --uib-right: 67%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d5));
+    --uib-color: rgb(240, 6, 6);
+  }
+  .dot:nth-child(9) {
+    --uib-bottom: 53%;
+    --uib-right: -0.8%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d3));
+  }
+  .dot:nth-child(10) {
+    --uib-bottom: 44.5%;
+    --uib-right: 27%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d4));
+    --uib-color: rgb(245, 153, 4);
+  }
+  .dot:nth-child(11) {
+    --uib-bottom: 36%;
+    --uib-right: 55.7%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d5));
+  }
+  .dot:nth-child(12) {
+    --uib-bottom: 28.7%;
+    --uib-right: 84.3%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d6));
+    --uib-color: rgb(240, 6, 6);
+  }
+  .dot:nth-child(13) {
+    --uib-bottom: 66.8%;
+    --uib-right: 15%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d4));
+    --uib-color: rgb(240, 6, 6);
+  }
+  .dot:nth-child(14) {
+    --uib-bottom: 58.8%;
+    --uib-right: 43%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d5));
+    --uib-color: rgb(115, 240, 6);
+  }
+  .dot:nth-child(15) {
+    --uib-bottom: 50%;
+    --uib-right: 72%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d6));
+    --uib-color: rgb(240, 6, 6);
+  }
+  .dot:nth-child(16) {
+    --uib-bottom: 42%;
+    --uib-right: 100%;
+    animation-delay: calc(var(--uib-speed) * var(--uib-d7));
+    --uib-color: rgb(6, 29, 240);
+  }
+
+  .dot:nth-child(3) {
+    --uib-scale: 0.98;
+  }
+  .dot:nth-child(2),
+  .dot:nth-child(8) {
+    --uib-scale: 0.96;
+  }
+  .dot:nth-child(1),
+  .dot:nth-child(7) {
+    --uib-scale: 0.94;
+  }
+  .dot:nth-child(6),
+  .dot:nth-child(12) {
+    --uib-scale: 0.92;
+  }
+  .dot:nth-child(5),
+  .dot:nth-child(11) {
+    --uib-scale: 0.9;
+  }
+  .dot:nth-child(10),
+  .dot:nth-child(16) {
+    --uib-scale: 0.88;
+  }
+  .dot:nth-child(9),
+  .dot:nth-child(15) {
+    --uib-scale: 0.86;
+  }
+  .dot:nth-child(14) {
+    --uib-scale: 0.84;
+  }
+  .dot:nth-child(13) {
+    --uib-scale: 0.82;
+  }
+</style>
+
+
+<!-- =================================================  -->
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="images/Logo Maker 2024_05_23_10_04_13.png" alt="Logo" width="80" height="80">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="searchButton"><i class="material-icons">search</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="material-icons">favorite</i> Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="material-icons">event_seat</i> My Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="material-icons">calendar_today</i> Calendar</a>
+        </li>
+        <li class="nav-item">
+          <a href="#3" class="btn btn-primary">Buy Tickets</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!------ Include the above in your HEAD tag ---------->
+
+  <div class="container">
+      <div class="row-fluid">
+          <form id="paymentForm" class="form-horizontal" novalidate>
+              <fieldset>
+                  <div id="legend">
+                      <legend class="">Payment</legend>
+                  </div>
+
+                  <!-- Name -->
+                  <div class="control-group">
+                      <label class="control-label" for="username">Card Holder's Name</label>
+                      <div class="controls">
+                          <input type="text" id="username" name="username" placeholder="" class="input-xlarge" required>
+                          <div class="invalid-feedback">Please enter the card holder's name.</div>
+                      </div>
+                  </div>
+
+                  <!-- Card Number -->
+                  <div class="control-group">
+                      <label class="control-label" for="cardNumber">Card Number</label>
+                      <div class="controls">
+                          <input type="text" id="cardNumber" name="cardNumber" placeholder="" class="input-xlarge"
+                              required>
+                          <div class="invalid-feedback">Please enter a valid card number.</div>
+                      </div>
+                  </div>
+
+                  <!-- Expiry-->
+                  <div class="control-group">
+                      <label class="control-label" for="expiryMonth">Card Expiry Date</label>
+                      <div class="controls">
+                          <select class="span3" name="expiry_month" id="expiryMonth" required>
+                              <option></option>
+                              <option value="01">Jan (01)</option>
+                              <option value="02">Feb (02)</option>
+                              <option value="03">Mar (03)</option>
+                              <option value="04">Apr (04)</option>
+                              <option value="05">May (05)</option>
+                              <option value="06">June (06)</option>
+                              <option value="07">July (07)</option>
+                              <option value="08">Aug (08)</option>
+                              <option value="09">Sep (09)</option>
+                              <option value="10">Oct (10)</option>
+                              <option value="11">Nov (11)</option>
+                              <option value="12">Dec (12)</option>
+                          </select>
+                          <select class="span2" name="expiry_year" id="expiryYear" required>
+                              <option value="13">2013</option>
+                              <option value="14">2014</option>
+                              <option value="15">2015</option>
+                              <option value="16">2016</option>
+                              <option value="17">2017</option>
+                              <option value="18">2018</option>
+                              <option value="19">2019</option>
+                              <option value="20">2020</option>
+                              <option value="21">2021</option>
+                              <option value="22">2022</option>
+                              <option value="23">2023</option>
+                          </select>
+                          <div class="invalid-feedback">Please select the expiration date.</div>
+                      </div>
+                  </div>
+
+                  <!-- CVV -->
+                  <div class="control-group">
+                      <label class="control-label" for="cvv">Card CVV</label>
+                      <div class="controls">
+                          <input type="password" id="cvv" name="cvv" placeholder="" class="span2" required>
+                          <div class="invalid-feedback">Please enter the CVV.</div>
+                      </div>
+                  </div>
+
+                  <!-- Save card -->
+                  <div class="control-group">
+                      <div class="controls">
+                          <label class="checkbox" for="save_card">
+                              <input type="checkbox" id="save_card" name="save_card" value="option1">
+                              Save card on file?
+                          </label>
+                      </div>
+                  </div>
+
+                  <!-- Submit -->
+                  <div class="control-group">
+                      <div class="controls">
+                          <button class="btn btn-success" onclick="handleSubmit(event)">Pay Now</button>
+                          <a href="index.html" class="btn bg-dark">Back</a>
+                      </div>
+                  </div>
+
+              </fieldset>
+          </form>
+      </div>
+  </div>
+
+      <style>
+          .video-container {
+              position: relative;
+              width: 100%;
+              padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+              overflow: hidden;
+              margin: 0 auto;
+          }
+          
+          .video-container iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+          }
+  
+          @media screen and (max-width: 768px) {
+              .video-container {
+                  padding-top:56.25%; /* Adjust the aspect ratio for smaller screens */
+              }
+          }
+      </style>
+  </head>
+  <body>
+      <div class="video-container">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/OrOYvVf6tIM" title="Horror Short Film &quot;Other Side of the Box&quot; | ALTER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>ame>
+      </div>
+
+
+   <!-- end modal...  -->
+  <script>
+      function handleSubmit(event) {
+          event.preventDefault();
+          var form = document.getElementById('paymentForm');
+          if (form.checkValidity() === false) {
+              event.stopPropagation();
+              form.classList.add('was-validated');
+          } else {
+              // Simulate form submission delay
+              setTimeout(function () {
+                  window.location.href = "paymentconfirmed.html";
+              }, 1000); // Redirect to success.html after 1 second
+          }
+      }
+  </script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  // Set the time for the loading animation to be visible (e.g., 3 seconds)
+  const loadingDuration = 8000;
+
+  // Function to remove the loading animation
+  function removeLoadingAnimation() {
+    const loadingContainer = document.querySelector('.container2');
+    
+    if (loadingContainer) {
+      loadingContainer.style.display = 'none';
+     
+    }
+    const successContainer = document.querySelector('.container');
+    if (successContainer) {
+      successContainer.style.display = 'block';
+     
+    }
+  }
+
+  // Initially hide the success container
+  const successContainer = document.querySelector('.container');
+  if (successContainer) {
+    successContainer.style.display = 'none';
+    
+  }
+
+  // Set a timeout to remove the loading animation after the specified duration
+  setTimeout(removeLoadingAnimation, loadingDuration);
+});
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.main.js"></script>
+  <script type="module" defer src="js/form.js"></script>
+</body>
+
+</html>
