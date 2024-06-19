@@ -283,7 +283,7 @@ footer {
   background: rgb(66, 66, 66);
 }
 
-.ticket-section {
+.event-section {
   padding: 60px 0;
 }
 
@@ -299,7 +299,7 @@ footer {
   align-items: center;
 }
 
-.ticket {
+.event {
   display: flex;
   margin: 0 10px;
   background: #fff;
@@ -309,35 +309,35 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.ticket-image {
+.event-image {
   width: 120px;
   height: auto;
   margin-right: 20px;
   border-radius: 8px;
 }
 
-.ticket-details {
+.event-details {
   max-width: 400px;
 }
 
-.ticket-title {
+.event-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-.ticket-description {
+.event-description {
   margin-bottom: 15px;
 }
 
-.ticket-actions {
+.event-actions {
   margin-top: 10px;
 }
 
-.ticket-section {
+.event-section {
   padding: 2rem 3rem;
 }
 
-.ticket {
+.event {
   display: flex;
   flex-direction: column;
   align-items: center;

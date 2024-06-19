@@ -92,14 +92,14 @@ function initializeTicketPurchase() {
   let concert = new Event("Summer Music Festival", "2024-07-15", "Central Park");
   let concertTicket = new Ticket(concert, "Concert", 50, 100);
   let moviePremiereTicket = new Ticket(concert, "Movie Premiere", 80, 50);
-  let sportsEventTicket = new Ticket(concert, "Sports Event", 60, 100);
+  let sportsEventTicket = new Ticket(concert, "Business Event", 60, 100);
   let theaterShowTicket = new Ticket(concert, "Theater Show", 70, 75);
   let festivalPass = new Ticket(concert, "Festival Pass", 150, 30);
 
   // Add tickets to the event
   concert.addTicket(concertTicket);
   concert.addTicket(moviePremiereTicket);
-  concert.addTicket(sportsEventTicket);
+  concert.addTicket(businessEventTicket);
   concert.addTicket(theaterShowTicket);
   concert.addTicket(festivalPass);
 

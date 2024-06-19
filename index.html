@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ticket Synergy Pro</title>
+  <title>TSpro</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -25,10 +25,10 @@
           <a class="nav-link" href="#" id="searchButton"><i class="material-icons">search</i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="material-icons">favorite</i> Favorites</a>
+          <a class="nav-link" href="#"><i class="material-icons">home</i> Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="material-icons">event_seat</i> My Tickets</a>
+          <a class="nav-link" href="#"><i class="material-icons">event_seat</i> Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="material-icons">calendar_today</i> Calendar</a>
@@ -39,101 +39,75 @@
       </ul>
     </div>
   </nav>
-
   <div class="full-screen-search" id="fullScreenSearch">
     <input type="text" class="form-control" placeholder="Search...">
   </div>
-
-  <div class="hero-section">
-    <video autoplay muted loop>
-      <source src="images/8043623-uhd_4096_2160_25fps.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-     <div class="company-info">
-      <h2>Welcome to Ticket Synergy Pro (TSpro)</h2>
-      <p>Your premier ticketing solutions! We bridge the gab between event organizers, venues, and ticket buyers, creating a seamless and efficient experience for all.</p>
-      <p>With our cutting-edge platform, you can easily search, purchase, and manage tickets to your favorite event.</p>
-    </div>
-    <div class="col-md-4">
-    <div class="hero-content">
-      <h1 id="h1">Previous Events</h1>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/Logo Maker 2024_05_23_10_04_13.png" alt="Event 1">
-            <div class="info">
-              <p>Event June 17-18, 2023: Rock Fest featuring Guns N' Roses and Foo Fighters.</p>
-              <p class="additional-info">A two-day rock music extravaganza.</p>
-              <a href="booking-link-for-event-1" class="btn btn-primary" target="_blank">Book Now</a>
-            </div>
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+      <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                  <div class="carousel-caption">
+                      <div class="container">
+                          <div class="row justify-content-center">
+                              <div class="col-lg-7 text-center">
+                                  <p class="fs-4 text-white animated zoomIn">Welcome to <strong class="text-dark">TEA House</strong></p>
+                                  <h1 class="display-1 text-dark mb-4 animated zoomIn">Get Ready to Experience the Future Of Ticketing!!</h1>
+                                  <a href="" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Sign Up</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                  <div class="carousel-caption">
+                      <div class="container">
+                          <div class="row justify-content-center">
+                              <div class="col-lg-7 text-center">
+                                  <p class="fs-4 text-white animated zoomIn">Welcome to <strong class="text-dark">TSpro</strong></p>
+                                  <h1 class="display-1 text-dark mb-4 animated zoomIn">Get Ready to Experience the Future of Ticketing!!</h1>
+                                  <a href="" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Sign Up</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="swiper-slide">
-            <img src="images/pexels-henri-mathieu-8349431.jpg" alt="Event 2">
-            <div class="info">
-              <p>Event April 28-30, 2023: Marvel Movie Marathon.</p>
-              <p class="additional-info">A three-day marthon screening of Marvel's Avengers movies.</p>
-              <a href="booking-link-for-event-2" class="btn btn-primary" target="_blank">Book Now</a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/pexels-jakewymoore-25637470.jpg" alt="Event 3">
-            <div class="info">
-              <p>Event Nov 16, 2023: Product Launch Event.</p>
-              <p class="additional-info">A one-day event launching a new electric vehicle model.</p>
-              <a href="booking-link-for-event-3" class="btn btn-primary" target="_blank">Book Now</a>
-            </div>
-          </div>
-        </div>
-    <div class="hero-content">
-      <h1 id="h1">Upcoming Events</h1>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/Logo Maker 2024_05_23_10_04_13.png" alt="Event 1">
-            <div class="info">
-              <p>Event June 23-25, 2024: Jazz Festival with John Legend and Corinne Bailey Rae.</p>
-              <p class="additional-info">A three-day jazz celebration.</p>
-              <a href="booking-link-for-event-1" class="btn btn-primary" target="_blank">Book Now</a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/pexels-henri-mathieu-8349431.jpg" alt="Event 2">
-            <div class="info">
-              <p>Event June 23-25, 2024: Pixar Animation Showcase.</p>
-              <p class="additional-info">a three-day showcase of beloved Pixar animated films.</p>
-              <a href="booking-link-for-event-2" class="btn btn-primary" target="_blank">Book Now</a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/pexels-jakewymoore-25637470.jpg" alt="Event 3">
-            <div class="info">
-              <p>Event July 26, 2024: Networkking Mixer.</p>
-              <p class="additional-info">A one-day networking event for startups and investors.</p>
-              <a href="booking-link-for-event-3" class="btn btn-primary" target="_blank">Book Now</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
       </div>
-    </div>
   </div>
-</div>
+  <!-- Carousel End -->
+        <div class="swiper-pagination"></div>
 
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <div class="position-relative">
-          <img src="images/pexels-davidgomes-2752777.jpg" class="d-block mx-lg-auto img-fluid rounded-start" alt="Event Image" width="700" height="500" loading="lazy">
+          <img src="images/images.jpeg" class="d-block mx-lg-auto img-fluid rounded-start" alt="Event Image" width="700" height="500" loading="lazy">
           <a href="#" class="btn-floating"><i class="material-icons">play_circle</i></a>
         </div>
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Ticket Synergy Pro</h1>
-        <p class="lead">Synergizing the Ticketing Experience!</p>
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+          Upcoming movie (Dead pool)
+        </h1>
+        <p class="lead">
+          Ryan Reynolds as Wade Wilson / Deadpool: A wisecracking mutant mercenary with accelerated healing, but severe scarring over his body after undergoing an experimental cancer treatment. The writers described Deadpool as "fun to hang out with... in short doses
+        </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-            Primary
+          Watch
             <i class="material-icons align-middle">arrow_forward</i>
           </button>
         </div>
@@ -148,7 +122,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active" id="ticket1">
             <div class="ticket">
-              <img src="images/ticket1.jpg" alt="Ticket 1" class="ticket-image">
+              <img src="images/images.jpeg" alt="Ticket 1" class="ticket-image">
               <div class="ticket-details">
                 <h3 class="ticket-title">Concert Ticket</h3>
                 <p class="ticket-description">Enjoy a live concert experience with your favorite artists.</p>
@@ -229,26 +203,17 @@
     <div class="container">
       <div class="row">
         <div class="col-6 col-md-2 mb-3">
-          <h5>IMPORTANT LINKS</h5>
+          <h6>IMPORTANT LINKS</h6>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body">Favorites</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body">My Tickets</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body">Calendar</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav p-0 text-body">Favorites</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav p-0 text-body">My Tickets</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav p-0 text-body">Calendar</a></li>
+            
           </ul>
         </div>
 
         <div class="col-md-5 offset-md-1 mb-3">
-          <form>
-            <h5>Subscribe to our newsletter</h5>
-            <p>Monthly digest of what is new and exciting from us.</p>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-              <button class="btn btn-primary" type="button">Subscribe</button>
-            </div>
-          </form>
+       
         </div>
       </div>
 
@@ -268,5 +233,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.main.js"></script>
+
 </body>
 </html>
