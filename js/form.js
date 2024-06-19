@@ -84,7 +84,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
   const user = users.find(user => user.email === email && user.password === password);
   if (user) {
     // alert('Login successful');
-    window.location.href = 'index.html'; // Redirect to homepage
+    window.location.href = 'home.html'; // Redirect to homepage
   } else {
     let msg = 'Invalid credentials';
     document.getElementById('error').innerHTML = msg;
