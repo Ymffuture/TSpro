@@ -315,7 +315,8 @@ footer {
 }
 
 .ticket-section {
-  padding: 60px 0;
+  padding: 40px 0;
+
 }
 
 .section-title {
@@ -394,4 +395,113 @@ footer {
 
 .ticket-actions {
   margin-top: 1rem;
+}
+
+/* Styles for laptop screens and larger */
+@media (max-width: 1024px) {
+
+  .navbar-brand img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .hero-section {
+    padding: 50px 0;
+  }
+
+  .profile .display-5 {
+    font-size: 2.5rem;
+  }
+
+  .profile .col-lg-6 {
+    max-width: 80%;
+  }
+
+  .profile .pfp {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile .edit, .profile .edit2 {
+    font-size: 1rem;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+
+  .ticket-section .section-title {
+    font-size: 2rem;
+  }
+
+  .ticket-section .ticket {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .ticket-section .ticket-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .ticket-section .ticket-details {
+    flex: 1;
+  }
+
+  .ticket-section .ticket-title {
+    font-size: 1.5rem;
+  }
+
+  .ticket-section .ticket-description {
+    font-size: 1.1rem;
+  }
+
+  .ticket-section .ticket-actions .btn {
+    font-size: 1rem;
+  }
+  .ticket-section{
+    /* background: red; */
+    padding: 20px;
+    margin-bottom: 20%;
+    
+  }
+  .container2{
+    /* background: green; */
+    padding: 10px;
+    margin-top: 20px;
+  }
+#ticketCarousel{
+  /* background: rgb(21, 0, 255); */
+  padding: 20px;
+}
+.carousel-inner{
+  /* background: purple; */
+  padding: 20px;
+}
+.ticket{
+  background: rgba(0, 0, 0, 0.765);
+  padding: 20px;
+  color: #fff;
+}
+  footer {
+    padding: 40px 0;
+  }
+
+  footer .col-md-5 {
+    text-align: left;
+  }
+
+  footer .list-unstyled li {
+    margin-right: 20px;
+  }
+
+  footer .list-unstyled .link-body {
+    font-size: 1.5rem;
+  }
 }
