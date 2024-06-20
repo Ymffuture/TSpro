@@ -1,30 +1,5 @@
 // search section
-document.addEventListener("DOMContentLoaded", () => {
-  const searchButton = document.getElementById("searchButton");
-  const fullScreenSearch = document.getElementById("fullScreenSearch");
-  const searchInput = fullScreenSearch.querySelector("input");
 
-  searchButton.addEventListener("click", () => {
-    fullScreenSearch.style.display = "flex";
-    searchInput.focus();
-  });
-
-  searchInput.addEventListener("blur", () => {
-    fullScreenSearch.style.display = "none";
-  });
-
-  new Swiper(".swiper-container", {
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-  });
-});
 
 // Define Event, Ticket, and User classes using OOP principles
 
@@ -160,26 +135,33 @@ function initializeTicketPurchase() {
 
 initializeTicketPurchase();
 
+document.addEventListener("DOMContentLoaded", () => {
+  const searchButton = document.getElementById("searchButton");
+  const fullScreenSearch = document.getElementById("fullScreenSearch");
+  const searchInput = fullScreenSearch.querySelector("input");
 
+  searchButton.addEventListener("click", () => {
+    fullScreenSearch.style.display = "flex";
+    searchInput.focus();
+  });
 
-const displayName = document.getElementById('first_name').value;
-const name2 = document.getElementById('username').value;
-  
-displayName.innerHTML = username;
+  searchInput.addEventListener("blur", () => {
+    fullScreenSearch.style.display = "none";
+  });
+
+  new Swiper(".swiper-container", {
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+  });
+});
+
  
 
 
-
-
-
-
-
-
-
-function event2(a,b){
-
-  return a * b;
-
-}
-
-event2(3,4);  // 12
