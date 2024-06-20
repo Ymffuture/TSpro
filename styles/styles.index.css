@@ -400,7 +400,7 @@ footer {
 /* Styles for laptop screens and larger */
 @media (max-width: 1024px) {
 
-  .navbar-brand img {
+  /* .navbar-brand img {
     width: 80px;
     height: 80px;
   }
@@ -410,7 +410,7 @@ footer {
   }
 
   .hero-section {
-    padding: 50px 0;
+    padding: 50% 0;
   }
 
   .profile .display-5 {
@@ -424,17 +424,17 @@ footer {
   .profile .pfp {
     width: 150px;
     height: 150px;
-  }
+  } */
 
-  .profile .edit, .profile .edit2 {
+  /* .profile .edit, .profile .edit2 {
     font-size: 1rem;
-  }
+  } */
 
-  .container {
+  /* .container {
     max-width: 960px;
-  }
+  } */
 
-  .ticket-section .section-title {
+  /* .ticket-section .section-title {
     font-size: 2rem;
   }
 
@@ -442,14 +442,14 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
+  } */
 
   .ticket-section .ticket-image {
     width: 150px;
     height: auto;
     margin-right: 20px;
   }
-
+  
   .ticket-section .ticket-details {
     flex: 1;
   }
@@ -474,7 +474,7 @@ footer {
   .container2{
     /* background: green; */
     padding: 10px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 #ticketCarousel{
   /* background: rgb(21, 0, 255); */
@@ -489,8 +489,9 @@ footer {
   padding: 20px;
   color: #fff;
 }
+
   footer {
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
   footer .col-md-5 {
